@@ -1,0 +1,23 @@
+
+.titulo_secundario{
+            background-color: rgb(207, 170, 5);
+            
+
+}
+ 
+#titulo_principal{
+    background-color: rgb(0, 217, 255);
+}
+ 
+#layout{
+    display: flex;
+
+
+}
+
+.rodape{
+    text-align: center;
+}
+
+
+
