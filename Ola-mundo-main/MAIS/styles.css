@@ -1,7 +1,7 @@
 
 .titulo_secundario{
-            background-color: rgb(2, 87, 7);
-            color: white;
+    background-color: rgb(2, 87, 7);
+     color: white;
             
 
 }
@@ -26,4 +26,69 @@ body{
     color: rgb(255, 255, 255); /*Cor da fonte*/
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.transicao:hover{
+    background-color: white;
+    border: solid 3px red;
+    color: white;
+    
+    
+}
+
+.transicao{
+    background-color: white;
+    border: solid 3px red;
+    color: black;
+    width: 600px;
+    right: 600px;
+    transition-duration: 3s;  /* define o tempo da trasicao */
+    transition-property: all;  /* define a propriedade que vai ser animada */
+    transition-delay: 1s; /* define o tempo de atraso para iniciar a transição */   
+    transition-timing-function: ease-in-out; /* define a função de tempo da transição */
+   
+}
+
+
+h1{
+    animation-name: multicolor;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; /* forwards,backwards. Mantém o estado final da animação */  
+    animation-iteration-count: infinite; /* define o número de vezes que a animação vai ser executada */
+
+}
+
+@keyframes multicolor {
+    0%{
+        color: red;
+    }
+    25%{
+        color: green;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: red;
+    }  
+
+}
+.animacao img{
+    display: block;
+    animation: foguete;
+    animation-duration: 5s;
+  
+}
+
+@keyframes foguete {
+   0%{margin-left: 0%;}
+   25%{margin-left: 80% ;transform: rotate(0deg);}
+   50%{margin-left: 80%; transform: rotate(-120deg);} 
+   75%{margin-left: 0%; transform: rotate(-120deg);}
+   100%{margin-left: 0%; transform: rotate(0deg);}   
+}
+
 
