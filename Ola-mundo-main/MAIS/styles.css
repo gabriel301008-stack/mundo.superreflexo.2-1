@@ -84,11 +84,23 @@ h1{
 }
 
 @keyframes foguete {
-   0%{margin-left: 0%;}
-   25%{margin-left: 80% ;transform: rotate(0deg);}
-   50%{margin-left: 80%; transform: rotate(-120deg);} 
-   75%{margin-left: 0%; transform: rotate(-120deg);}
-   100%{margin-left: 0%; transform: rotate(0deg);}   
-}
+    0%{margin-left: 0%;}
+    25%{margin-left: 80% ;transform: rotate(0deg);}
+    50%{margin-left: 80%; transform: rotate(-120deg);} 
+    75%{margin-left: 0%; transform: rotate(-120deg);}
+    100%{margin-left: 0%; transform: rotate(0deg);}   
+}                               
 
+#teste-gradiente{
+    /* background: linear-gradient(to right, red, orange, yellow, orange, red); */
+    /* definir gradiente do CSS, to right, to bottom, to top, to left ou em graus(0deg, 45deg, 90deg, etc.) 
+    Quando o gradiente for em  circulo usa o radial-gradient.*/
+    color: white;
+    height: 600px;
+    cursor: crosshair; /* ele altera o cursor ao passar o mouse sobre o elemento */ 
+    background-image: url(imagens_redme/senhor_dos_aneis.png);
+    background-size: cover;
+    opacity: 0.5; /* define a opacidade do elemento, 0 é transparente e 1 é opaco */
+
+}
 
