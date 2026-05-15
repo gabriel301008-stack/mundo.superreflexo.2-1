@@ -80,6 +80,7 @@ h1{
     display: block;
     animation: foguete;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
   
 }
 
